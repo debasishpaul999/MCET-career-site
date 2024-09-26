@@ -30,7 +30,11 @@
             vitae eu. Primis sagittis orci est primis congue.
         </p>
         <h2 class="text-center mt-2 mb-4">Open Position</h2>
-        <p>>TODO: list job position</p>
+        <div>
+            {% for job in jobs %}
+                {% include 'jobitem.html' %}
+            {% endfor %}
+        </div>
         <div class="text-center">
             <button class="btn btn-primary btn-lg">CONTACT US</button>
             <p class="mt-4">Copyright 2024, MCET</p>
